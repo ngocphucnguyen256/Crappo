@@ -1,0 +1,137 @@
+$primary-color: #fff;
+$sub-color: rgba(178, 64, 93, 1);
+$background-color: #0D0D2B;
+$body-font-size: 1.6rem;
+$body-font-weight: 400;
+$font-family: 'Rubik', sans-serif;
+$font-family-sub: 'Inter', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: $font-family;
+    background: $background-color;
+    color: $primary-color;
+    font-size: 62.5%;
+    font-weight: $body-font-weight;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    color: $primary-color;
+    text-decoration: none;
+}
+button{
+    font-family: $font-family;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border:none;
+    color: $primary-color;
+    font-size: $body-font-size;
+}
+input{
+    font-family: $font-family;
+
+
+}
+body{
+    font-size: $body-font-size;
+}
+//------------------------------------------header--------------------------------
+.header{
+    &__container{
+        margin: 6rem 12rem 0rem 12rem;
+    }
+    &__top{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        &--logo{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        
+        }
+        &--right{
+            display:flex;
+            align-items:center;
+        }
+        &--menu{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        &--item{
+            margin-right: 3.2rem;
+        }
+        &--login{
+            margin-left: 5.6rem;
+        }
+        &--buttons{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+    }
+    &__button--login{
+        margin-left: 5.6rem;
+        border-right: 1px solid rgba(242, 242, 242, .3);
+        padding-right:2.4rem;
+    }
+    &__button--register{
+        margin-left: 2.4rem;
+    }
+}
+.logo{
+    &__img{
+        width:4rem;
+        height:4rem;
+        margin-right: 1.6rem;
+    }
+    &__title{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.04rem;
+        text-transform: uppercase;
+    }
+}
+
+.button__big{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 3.2rem;
+    width: 13rem;
+    height: 5.2rem;
+    background: #3671E9;
+    border-radius: 32px;
+}
+
+
+//------------------------------------------overlay menu--------------------------------
+
+
+
+
+//------------------------------------------features--------------------------------
+
+
+
+//------------------------------------------services--------------------------------
+
+
+
+
+//------------------------------------------footer--------------------------------
+
+
+
