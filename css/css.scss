@@ -5,6 +5,12 @@ $body-font-size: 1.6rem;
 $body-font-weight: 400;
 $font-family: 'Rubik', sans-serif;
 $font-family-sub: 'Inter', sans-serif;
+@mixin margin-lr{
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+
 
 *{
     box-sizing: border-box;
@@ -41,12 +47,27 @@ input{
 }
 body{
     font-size: $body-font-size;
+    line-height: 175%;
+    letter-spacing: 0.01em;
+}
+h2{
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%;
+}
+h3{
+    font-size:3.2rem;
+    font-style: normal;
+    font-weight: bold;
 }
 //------------------------------------------header--------------------------------
 .header{
     &__container{
         margin: 6rem 12rem 0rem 12rem;
     }
+    //----------------top----------------
+
     &__top{
         display:flex;
         justify-content:space-between;
@@ -70,6 +91,7 @@ body{
             margin-right: 3.2rem;
         }
         &--login{
+            padding: 1.4rem 3.2rem;
             margin-left: 5.6rem;
         }
         &--buttons{
@@ -86,7 +108,54 @@ body{
     &__button--register{
         margin-left: 2.4rem;
     }
+    //---------------- content----------------
+    &__content{
+        margin-top: 5rem;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        &--left{
+            margin-right: .8rem;
+
+            width: calc(50% - 0.8rem);
+
+        }
+        &--info{
+            display: inline-block;
+            margin-bottom: 2.4rem;
+            padding: .4rem 1.1rem .4rem 0rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3.2rem;
+
+        }
+        &--discount{
+            background: #FFFFFF;
+            border-radius: 3.2rem;
+            font-style: normal;
+            font-weight: 500;
+            color: #0D0D2B;
+            padding: .4rem 1.6rem;
+            margin-right: 1.6rem;
+        }
+        &--heading{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 6.4rem;
+            line-height: 7.6rem;
+            margin-bottom: 2.4rem;
+        }
+        &--desc{
+            margin-bottom: 3.2rem;
+        }
+        &--right{
+            width: calc(50% - 0.8rem);
+    
+        }
+ 
+    }
+
 }
+//----------------logo----------------
 .logo{
     &__img{
         width:4rem;
@@ -103,21 +172,77 @@ body{
         text-transform: uppercase;
     }
 }
+//----------------button----------------
 
 .button__big{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:flex;
     align-items: center;
-    padding: 1.4rem 3.2rem;
-    width: 13rem;
-    height: 5.2rem;
+    min-width: 13rem;
+    min-height: 5.2rem;
     background: #3671E9;
     border-radius: 32px;
+    padding: 1.6rem 2.4rem;
+    &--img{
+        display: inline-block;
+        margin-left: 2.4rem;
+        width:3.2rem;
+        height:3.2rem;
+    }
 }
 
 
-//------------------------------------------overlay menu--------------------------------
+
+//------------------------------------------intro--------------------------------
+
+
+.intro{
+    &__container{
+        @include  margin-lr();
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+//----------------top----------------
+
+    &__top{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        &--item{
+            display:flex;
+            
+            &--img{
+                width:8rem;
+                height:8rem;
+            }
+            &--content{
+                margin-left: 2.4rem;
+            }
+            &--heading{
+                margin-bottom: .8rem;
+            }
+        }
+    }
+//----------------bottom----------------
+    &__bottom{
+        display: flex;
+        align-items:center;
+        &--img{
+            width:65rem;
+            height: auto;
+        }
+        &--content{
+            margin-left: 7rem;
+        }
+        &--heading{
+            margin-bottom: 2.4rem;
+        }
+        &--desc{
+            margin-bottom: 3.2rem;
+
+        }
+    }
+}
+
 
 
 
