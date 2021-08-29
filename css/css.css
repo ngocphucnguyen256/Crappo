@@ -424,6 +424,19 @@ h3 {
   text-align: center;
   border-radius: 2rem;
   background: rgba(251, 252, 254, 0.97);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .trade__bottom--card--img {
@@ -466,12 +479,17 @@ h3 {
   color: #FFFFFF;
 }
 
-.card__blue > .trade__bottom--card--desc {
+.card__blue > p.trade__bottom--card--desc {
   color: #FFFFFF;
 }
 
-.card__blue > .trade__bottom--card--heading--shorthand {
+.card__blue > span.trade__bottom--card--heading--shorthand {
   color: #FFFFFF;
   opacity: 0.7;
+}
+
+.feature__heading {
+  text-align: center;
+  margin: 10rem 30rem;
 }
 /*# sourceMappingURL=css.css.map */
