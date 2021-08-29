@@ -1,5 +1,6 @@
 $primary-color: #fff;
-$sub-color: rgba(178, 64, 93, 1);
+$sub-color: #0D0D2B;
+$color-blue:  #3671E9;
 $background-color: #0D0D2B;
 $body-font-size: 1.6rem;
 $body-font-weight: 400;
@@ -42,13 +43,19 @@ button{
 }
 input{
     font-family: $font-family;
-
+    background: transparent;
+    outline: none;
+    border:none;
+    color: $primary-color;
+    font-size: $body-font-size;
 
 }
+
 body{
     font-size: $body-font-size;
     line-height: 175%;
     letter-spacing: 0.01em;
+    margin-bottom: 10rem;
 }
 h2{
     font-size: 4rem;
@@ -179,7 +186,7 @@ h3{
     align-items: center;
     min-width: 13rem;
     min-height: 5.2rem;
-    background: #3671E9;
+    background: $color-blue;
     border-radius: 32px;
     padding: 1.6rem 2.4rem;
     &--img{
@@ -247,7 +254,147 @@ h3{
 
 
 
-//------------------------------------------features--------------------------------
+//------------------------------------------trade--------------------------------
+.trade{
+    &__container{
+    }
+    &__top{
+        height:45.7rem;
+        position: relative;
+    }
+    &__heading{
+        text-align: center;
+    }
+    &__desc{
+        text-align: center;
+        margin: 2.4rem 41rem 6.4rem 41rem;
+    }
+    &__form{
+        position:absolute;
+        color: $sub-color;
+        inset: 30rem 25rem auto 25rem;
+        background: rgba(251, 252, 254, .97);
+
+        border-radius: 2rem;
+        &--inner{
+            padding:4.8rem;
+        }
+        &--top{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            height:15.5rem;
+            padding-bottom:4.8rem;
+        }
+        &--input{
+            min-width:40rem;
+            border-bottom: 1px solid #E0E0E0;
+            padding: .8rem;
+            color: $sub-color;
+        }
+        &--input::placeholder{
+            color: $sub-color;
+     
+        }
+        &--title{
+            line-height: 150%;
+            letter-spacing: 0.04em;
+            color: $color-blue;
+            margin-bottom: 1.6rem;
+        }
+        &--heading{
+            margin-bottom: .4rem;
+            &--span{
+                color: $color-blue;
+            }
+        }
+        &--desc{
+            color: #828282;
+            margin-bottom: 4.8rem;
+        }
+
+
+    }
+
+   .dropdown{
+       min-width: 15rem;
+        border-bottom: 1px solid #E0E0E0;
+
+       &__arrow{
+           width:1.6rem;
+           height: 1.6rem;
+        
+       }
+       &__menu{
+           display: none;
+       }
+   }
+
+//----------------bottom----------------
+
+    &__bottom{
+        background: linear-gradient(180deg, #F8F9FB 0%, #b9babb 100%);
+        color: $sub-color;
+        padding: 31.6rem 12rem 10rem 12rem;
+        &--heading{
+            margin: 0rem 20rem 6.4rem 20rem;
+            text-align: center;
+        }
+        &--content{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            >:not(:last-child){
+                margin-right: 4.5rem;
+            }
+        }
+        &--card{
+            padding: 4.8rem 2.4rem;
+            text-align: center;
+            border-radius: 2rem;
+            background: rgba(251, 252, 254, .97);
+            
+            &--img{
+                width:8rem;
+                height:8rem;
+                margin-bottom: 4.8rem;
+            }
+            &--heading{
+                display:flex;
+                justify-content:center;
+                margin-bottom: 1.6rem;
+                &--shorthand{
+                    font-size: 1.8rem;
+                    color: #828282;
+                    margin-left: .8rem;
+                    display:block;
+                    align-items:center;
+                }
+            }
+            &--desc{
+                margin-bottom: 2.5rem;
+                color: #828282;
+            }
+            &--button{
+                margin: 0rem 3rem;
+            }
+        }
+    }
+}
+
+.card__blue{
+    background: #2B076E;
+    color: #FFFFFF;
+    >.trade__bottom--card--desc{
+    color: #FFFFFF;
+    }
+    >.trade__bottom--card--heading--shorthand{
+        color: #FFFFFF;
+        opacity: 0.7;
+}
+}
+
+
 
 
 
