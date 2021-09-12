@@ -61,6 +61,19 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.01em;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  font-weight: 600;
+}
+
 .header__container {
   margin: 6rem 12rem 0rem 12rem;
 }
@@ -490,6 +503,145 @@ h3 {
 
 .feature__heading {
   text-align: center;
-  margin: 10rem 30rem;
+  margin: 10rem 29rem;
+}
+
+.feature__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12rem;
+}
+
+.feature__item--detail {
+  width: 45.4rem;
+}
+
+.feature__item--heading {
+  margin-bottom: 2.4rem;
+}
+
+.feature__top {
+  margin-left: 12rem;
+  margin-right: 18rem;
+}
+
+.feature__top--left {
+  margin-top: 4rem;
+}
+
+.feature__top--right {
+  background: #35068C;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.feature__chart {
+  margin-left: 10rem;
+  position: relative;
+}
+
+.feature__chart--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__chart--heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__chart--shorthand {
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: .8rem;
+  color: #CFCFCF;
+  opacity: 0.7;
+}
+
+.feature__chart--percentage {
+  margin-left: auto;
+  color: #42ffff;
+}
+
+.feature__chart--icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.6rem;
+}
+
+.feature__chart--change {
+  position: absolute;
+  left: 6.4rem;
+  bottom: -13rem;
+  padding: 2.4rem 1.6rem;
+  border-radius: 1rem;
+  width: 18rem;
+  background: #491F98;
+}
+
+.feature__chart--change--title {
+  margin-bottom: 1.6rem;
+}
+
+.feature__chart--change--percentage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.feature__chart--change--percentage--icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.feature__chart--value {
+  background: #491F98;
+  position: absolute;
+  right: 5.6rem;
+  bottom: -4.1rem;
+  border-radius: 1rem;
+  padding: 1.6rem 3.2rem;
+}
+
+.feature__button {
+  margin-top: 3.2rem;
+}
+
+.feature__mid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25rem;
+}
+
+.feature__mid--left {
+  width: 71rem;
+  margin-right: 9rem;
+}
+
+.feature__mid--right {
+  margin-right: 18.5rem;
+}
+
+.feature__bottom--left {
+  margin-left: 12rem;
+  margin-right: 6.4rem;
+}
+
+.feature__bottom--right {
+  margin-right: 12rem;
 }
 /*# sourceMappingURL=css.css.map */

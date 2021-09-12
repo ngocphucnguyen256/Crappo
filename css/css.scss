@@ -68,6 +68,18 @@ h3{
     font-style: normal;
     font-weight: bold;
 }
+h4{
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    letter-spacing: 0.01em;
+}
+h5{
+    font-size: 2rem;
+    line-height: 2.9rem;
+    font-weight: 600;
+}
 //------------------------------------------header--------------------------------
 .header{
     &__container{
@@ -402,7 +414,116 @@ h3{
 .feature{
     &__heading{
         text-align: center;
-        margin: 10rem 30rem;
+        margin: 10rem 29rem;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 12rem;
+        &--detail{
+            width: 45.4rem;
+        }
+        &--heading{
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__top{
+        margin-left: 12rem;
+        margin-right: 18rem;
+        &--left{
+            margin-top: 4rem;
+        }
+        &--right{
+            background: #35068C;
+            padding: 4rem;
+            border-radius: 2rem;
+        }
+
+    }
+    &__chart{
+        margin-left: 10rem;
+        position: relative;
+  
+        &--title{
+            display: flex;
+            align-items: center;
+            
+        }
+        &--heading{
+            display:flex;
+            align-items: center;
+        }
+        &--shorthand{
+            font-size: 16px;
+            line-height: 19px;
+            margin-left: .8rem;
+            color: #CFCFCF;
+            opacity: 0.7;
+        }
+        &--percentage{
+            margin-left: auto;
+            color: rgba(66, 255, 255, 1);
+
+        }
+        &--icon{
+            width:4rem;
+            height:4rem;
+            margin-right: 1.6rem;
+        }
+        &--change{
+            position:absolute;
+            left: 6.4rem;
+            bottom: -13rem;
+            padding: 2.4rem 1.6rem;
+            border-radius: 1rem;
+            width: 18rem;
+            background: #491F98;
+            &--title{
+                margin-bottom: 1.6rem;
+            }
+            &--percentage{
+                display:flex;
+                align-items: center;
+                margin-bottom: 1.6rem;
+                &--icon{
+                    width:2.4rem;
+                    height:2.4rem;
+                }
+            }
+        }
+        &--value{
+            background: #491F98;
+            position:absolute;
+            right: 5.6rem;
+            bottom: -4.1rem;
+            border-radius: 1rem;
+            padding: 1.6rem 3.2rem;
+        }
+    }
+    &__button{
+        margin-top: 3.2rem;
+    }
+
+
+    &__mid{
+        align-items: center;
+        margin-top: 25rem;
+        &--left{
+            width:71rem;
+            margin-right: 9rem;
+        }
+        &--right{
+            margin-right: 18.5rem;
+        }
+    }
+
+    &__bottom{
+        &--left{
+            margin-left: 12rem;
+            margin-right:6.4rem;
+        }
+        &--right{
+            margin-right: 12rem;
+        }
     }
 }
 
