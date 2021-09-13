@@ -40,6 +40,7 @@ button{
     border:none;
     color: $primary-color;
     font-size: $body-font-size;
+
 }
 input{
     font-family: $font-family;
@@ -55,7 +56,6 @@ body{
     font-size: $body-font-size;
     line-height: 175%;
     letter-spacing: 0.01em;
-    margin-bottom: 10rem;
 }
 h2{
     font-size: 4rem;
@@ -176,6 +176,11 @@ h5{
 }
 //----------------logo----------------
 .logo{
+    display: flex;
+    align-items: center;
+    
+    justify-content:space-between;
+
     &__img{
         width:4rem;
         height:4rem;
@@ -196,7 +201,7 @@ h5{
 .button__big{
     display:flex;
     align-items: center;
-    min-width: 13rem;
+
     min-height: 5.2rem;
     background: $color-blue;
     border-radius: 32px;
@@ -527,13 +532,104 @@ h5{
     }
 }
 
+//------------------------------------------contact--------------------------------
+.contact{
 
-
+    &__inner{
+        margin: 8.8rem 12rem;
+        background-color: $color-blue;
+        padding: 4.8rem;
+        border-radius:2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    &__desc{
+        margin-top: 1.6rem;
+        width: 35rem;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+    &__button{
+        background-color: #FFFFFF;
+        color: $sub-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+    }
+    &__input{
+        width: 37.5rem;
+        padding: .7rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        margin-right: 4rem;
+    }
+    &__input::placeholder{
+        color: #FFFFFF;
+    }
+}
 
 
 
 
 //------------------------------------------footer--------------------------------
+
+.footer{
+    &__inner{
+        margin: 8rem 12rem;
+        &--top{
+            display: flex;
+            justify-content:space-between;
+        }
+        &--bottom{
+            margin-top: 12rem;
+            margin-bottom: 8rem;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+    }
+    &__logo{
+        margin-right: 17rem;
+    }
+    &__item{
+       width: 20rem;
+        &--heading{
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__payment{
+        width:35.5rem;
+        margin-left: 10rem;
+        &--heading{
+            margin-bottom: 4rem;
+        }
+        &--list{
+            display: flex;
+            justify-content:space-between;
+        }
+    }
+    &__payment--item img{
+        width: 9.6rem;
+        height: 6.4rem;
+
+    }
+    &__bottom--link--list{
+        display: flex;
+        justify-content:space-between;
+    }
+    &__bottom--link--item{
+        margin-left: 3.2rem;
+        img{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    
+
+    }
+}
 
 
 
