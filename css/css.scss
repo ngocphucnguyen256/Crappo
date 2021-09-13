@@ -201,10 +201,8 @@ h5{
 .button__big{
     display:flex;
     align-items: center;
-
-    min-height: 5.2rem;
     background: $color-blue;
-    border-radius: 32px;
+    border-radius: 3.2rem;
     padding: 1.6rem 2.4rem;
     &--img{
         display: inline-block;
@@ -303,7 +301,7 @@ h5{
             padding-bottom:4.8rem;
         }
         &--input{
-            min-width:40rem;
+            width:40rem;
             border-bottom: 1px solid #E0E0E0;
             padding: .8rem;
             color: $sub-color;
@@ -333,7 +331,7 @@ h5{
     }
 
    .dropdown{
-       min-width: 15rem;
+        width: 15rem;
         border-bottom: 1px solid #E0E0E0;
 
        &__arrow{
@@ -556,12 +554,12 @@ h5{
         background-color: #FFFFFF;
         color: $sub-color;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 150%;
         text-align: center;
     }
     &__input{
-        width: 37.5rem;
+        flex-grow: 1;
         padding: .7rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         margin-right: 4rem;
@@ -582,6 +580,7 @@ h5{
         &--top{
             display: flex;
             justify-content:space-between;
+            align-items: flex-start;
         }
         &--bottom{
             margin-top: 12rem;
@@ -633,3 +632,33 @@ h5{
 
 
 
+
+@media only screen and (max-width:70em){
+    html{
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width:69em){
+    html{
+        font-size: 45%;
+    }
+}
+ 
+@media only screen and (max-width:52em){
+    html{
+        font-size: 40%;
+    }
+}   
+
+@media only screen and (max-width:42em){
+    html{
+        font-size: 25%;
+    }     
+}
+
+
+@media only screen and (max-width:25em){
+    html{
+        font-size: 20%;
+    }
+}
